@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #333;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* Style for pricing */
+li::after {
+    content: ' - $';
+    color: #777;
+}
+
+/* Style for the item price */
+span {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #f7f7f7;
+    transition: background-color 0.3s;
+}
+/* Add this to your existing styles.css */
+.burgerLogo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: moveBurger 1s infinite alternate; /* Adjust the animation duration and other properties as needed */
+}
+
+@keyframes moveBurger {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Adjust the distance the logo moves */
+    }
+}
+
